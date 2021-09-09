@@ -134,6 +134,7 @@ const deleteItemInDB = (req, res) => {
 const test = function(req, res){
   // let para = req.param('url') || '';
   const itemId = req.param;
+  console.log(req.param)
   res.send(itemId);
 }
 app.get("/seller/data", getItemListFromDB); // add
