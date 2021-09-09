@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>My Account</title>
+	<script type="text/javascript">
+		 function changeFrameHeight(){
+        var ifm= document.getElementById("myframe");
+        ifm.height=document.documentElement.clientHeight-56;
+    }
+    window.onresize=function(){ changeFrameHeight();}
+    $(function(){changeFrameHeight();});
+		</script>
+	<style>
+		/* Profile container */
+		.profile {
+		margin: 20px 0;
+		}
+
+		/* Profile sidebar */
+		.profile-sidebar {
+		padding: 20px 0 10px 0;
+		background: #fff;
+		}
+
+		.profile-userpic img {
+		float: none;
+		margin: 0 auto;
+		width: 50%;
+		height: 50%;
+		-webkit-border-radius: 50% !important;
+		-moz-border-radius: 50% !important;
+		border-radius: 50% !important;
+		}
+
+		.profile-usertitle {
+		text-align: center;
+		margin-top: 20px;
+		}
+
+		.profile-usertitle-name {
+		color: #052905;
+		font-size: 16px;
+		font-weight: 600;
+		margin-bottom: 7px;
+		}
+
+		
+
+		.profile-userbuttons {
+		text-align: center;
+		margin-top: 10px;
+		}
+
+		.profile-userbuttons .btn {
+		text-transform: uppercase;
+		font-size: 11px;
+		font-weight: 600;
+		padding: 6px 15px;
+		margin-right: 5px;
+		}
+
+		.profile-userbuttons .btn:last-child {
+		margin-right: 0px;
+		}
+			
+		.profile-usermenu {
+		margin-top: 30px;
+		}
+
+		.profile-usermenu ul li {
+		border-bottom: 1px solid #f0f4f7;
+		}
+
+		.profile-usermenu ul li:last-child {
+		border-bottom: none;
+		}
+
+		.profile-usermenu ul li a {
+		color: #5bd15b;
+		font-size: 14px;
+		font-weight: 400;
+		}
+
+		.profile-usermenu ul li a i {
+		margin-right: 8px;
+		font-size: 14px;
+		}
+
+		.profile-usermenu ul li a:hover {
+		background-color: #fafcfd;
+		color: #5bd15b;
+		}
+
+		.profile-usermenu ul li.active {
+		border-bottom: none;
+		}
+
+		.profile-usermenu ul li.active a {
+		color: #247924;
+		background-color: #f6f9fb;
+		border-left: 2px solid #247924;
+		margin-left: -2px;
+		}
+
+		/* Profile Content */
+		.profile-content {
+		padding: 20px;
+		background: #fff;
+		min-height: 460px;
+		}
+
+	</style>
+  </head>
+  <body>
+
+	<nav class="navbar navbar-expand-lg py-4 navbar-light bg-light">
+		<div class="container">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<a class="navbar-brand" href="#">Brand Name</a>
+			<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+				<li class="nav-item">
+					<a class="nav-link" href="/cart"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+						<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+					  </svg></a>
+				  </li>
+				<li class="nav-item">
+				<a class="nav-link" aria-current="page" href="/">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" href="/account">Account</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link active" href="/seller">Stock</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="/login">Login</a>
+			</li>
+			</ul>
+			
+		  </div>
+		</div>
+	  </nav>
+	  
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+	<div class="container">
+		
+		
+<div class="container">
+    <div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				
+				<!-- END SIDEBAR USERPIC -->
+				<!-- SIDEBAR USER TITLE -->
+				<div class="profile-usertitle">
+					<div class="profile-userpic">
+						<img src="https://image.flaticon.com/icons/png/512/747/747376.png" class="img-responsive" alt="">
+					</div>
+					<div class="profile-usertitle-name">
+						User Name
+					</div>
+				</div>
+				<!-- END SIDEBAR USER TITLE -->
+				<!-- SIDEBAR BUTTONS -->
+				
+				<!-- END SIDEBAR BUTTONS -->
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul style="list-style-type: none;">
+						<li class="active">
+							<a href="/profile" target="myframe">
+							<i class="glyphicon glyphicon-home"></i>
+							Overview</a>
+						</li>
+						<li>
+							<a href="/order" target="myframe">
+							<i class="glyphicon glyphicon-user"></i>
+							Your Order</a>
+						</li>
+						<li>
+							<a href="/help"  target="myframe">
+							<i class="glyphicon glyphicon-flag"></i>
+							Help</a>
+						</li>
+					</ul>
+				</div>
+				<!-- END MENU -->
+			</div>
+		</div>
+		<div class="col-md-9">
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputAddress" class="col-sm-2 col-form-label">Address</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputAddress"  value="Address Example">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPhoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputPhoneNumber" value="0000-01111">
+                </div>
+              </div>
+              <button type="button" class="btn btn-outline-secondary">Cancel</button>
+            <button type="button" class="btn btn-outline-success">Save</button>
+			<!-- <div class="profile-content">
+			   <iframe name="myframe" id ="myframe" src="profile.html"width="100%" height="600" src="/dsdd/confirm/"  frameborder="0" scrolling="auto"></iframe>
+			</div> -->
+		</div>
+        
+	</div>
+	
+</div>
+<br>
+<br>
+	</div>
+
+	
+
+
+	<footer class="bg-light text-center text-lg-start fixed-bottom" >
+		<!-- Copyright -->
+		<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+		  © 2020 Copyright:
+		  <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+		</div>
+		<!-- Copyright -->
+	  </footer>
+  </body>
+</html>

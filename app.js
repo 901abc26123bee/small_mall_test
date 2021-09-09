@@ -14,6 +14,7 @@ var buyerRouter = require('./routes/buyer');
 var sellerRouter = require('./routes/seller');
 var cartRouter = require('./routes/cart');
 var loginRouter = require('./routes/login');
+var accountRouter = require('./routes/account');
 
 var app = express();
 
@@ -29,6 +30,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true}))
 app.use(bodyParser.json())
 
+
+
+
 // ---------------------------- page router ------------------------------
 // 頁面轉跳
 app.use('/', indexRouter);
@@ -36,6 +40,7 @@ app.use('/buyer', buyerRouter);
 app.use('/seller', sellerRouter);
 app.use('/cart', cartRouter);
 app.use('/login', loginRouter);
+app.use('/account', accountRouter);
 
 // ---------------------------- database ------------------------------
 // connect to database
