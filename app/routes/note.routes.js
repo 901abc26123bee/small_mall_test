@@ -6,6 +6,8 @@ module.exports = (app) => {
 
     // Retrieve all Notes
     app.get('/datas', notes.findAll);
+    // http://localhost:3000 to initialize buyer page
+    // app.all('/', notes.initailShow);
 
     // Retrieve a single Note with noteId
     app.get('/datas/:noteId', notes.findOne);

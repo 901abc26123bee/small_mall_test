@@ -33,6 +33,18 @@ exports.findAll = (req, res) => {
     });
 };
 
+// exports.initailShow = (req, res, next) => {
+//     Note.find()
+//     .then(notes => {
+//         render('indexCom/insertdata', { itemList: notes});
+//         next()
+//     }).catch(err => {
+//         res.status(500).send({
+//             message: err.message || "Some error occurred while retrieving notes."
+//         });
+//     });
+// };
+
 // Find a single note with a noteId
 exports.findOne = (req, res) => {
     Note.findById(req.params.noteId)

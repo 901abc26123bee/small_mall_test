@@ -7,8 +7,13 @@ var router = express.Router();
 
 /* get users listing. */
 // http://localhost:3000/buyer
+// router.get('/', function(req, res, next) {
+//   res.render('buyer',);
+// });
+
 router.get('/', function(req, res, next) {
   res.render('buyer',);
+  // res.render('buyer', { itemList: [...itemList] });
 });
 
 module.exports = router;
